@@ -21,7 +21,7 @@
     
 ### 参考代码
     dialog=LoadingUtil.show(dialog,this,LoadingUtil.TYPE_1);
-    dialog.setCancelable(false);//按返回键取消
+    dialog.setCancelable(false);//按返回键取消
     LoadingUtil.dismiss(dialog);
     
    
