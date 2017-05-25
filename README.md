@@ -17,12 +17,11 @@
         maven { url 'https://jitpack.io' }
     }
 ### 2.在app的bulid.gradle中添加引用  
-    compile 'com.github.lieweisi:LoadingDialog:v1.0'
+    compile 'com.github.lieweisi:loading:v0.1'
     
 ### 参考代码
-    LoadingDialog dialog=new LoadingDialog(this, LoadingUtil.TYPE_1);
-    dialog.setCancelable(false);
-    dialog.setCanceledOnTouchOutside(false);
-    dialog.show();
+    dialog=LoadingUtil.show(dialog,this,LoadingUtil.TYPE_1);
+    dialog.setCancelable(false);//按返回键取消
+    LoadingUtil.dismiss(dialog);
     
    
